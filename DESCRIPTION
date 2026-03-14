@@ -1,0 +1,41 @@
+Package: achieveGap
+Type: Package
+Title: Modeling Achievement Gap Trajectories with Hierarchical Penalized Splines
+Version: 0.1.0
+Authors@R: 
+    person("Subir", "Hait",
+           email = "haitsubi@msu.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-9871-9677"))
+Description: 
+    Implements a hierarchical penalized spline framework for estimating
+    achievement gap trajectories in longitudinal educational data. The
+    achievement gap between two groups (for example low versus high
+    socioeconomic status) is modeled directly as a smooth function of grade
+    while simultaneously estimating the baseline trajectory within a mixed
+    effects model. Smoothing parameters are selected using restricted maximum
+    likelihood (REML), and simultaneous confidence bands with correct joint
+    coverage are constructed using posterior simulation. The package also
+    provides tools for simulation-based benchmarking, model visualization,
+    and hypothesis testing.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends:
+    R (>= 4.1.0)
+Imports:
+    mgcv (>= 1.9-0),
+    lme4 (>= 1.1-0),
+    MASS (>= 7.3-0),
+    ggplot2 (>= 3.4.0)
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    tidyverse
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/causalfragility-lab/achieveGap
+BugReports: https://github.com/causalfragility-lab/achieveGap/issues
+ 
