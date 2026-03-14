@@ -2,27 +2,29 @@ Package: achieveGap
 Type: Package
 Title: Modeling Achievement Gap Trajectories with Hierarchical Penalized Splines
 Version: 0.1.0
-Authors@R: 
+Authors@R:
     person("Subir", "Hait",
            email = "haitsubi@msu.edu",
            role = c("aut", "cre"),
            comment = c(ORCID = "0009-0004-9871-9677"))
-Description: 
-    Provides a hierarchical penalized spline framework for estimating 
-    achievement gap trajectories in longitudinal educational data. 
-    The achievement gap between two groups (e.g., low versus high 
-    socioeconomic status) is modeled directly as a smooth function 
-    of grade while the baseline trajectory is estimated simultaneously 
-    within a mixed-effects model. Smoothing parameters are selected 
-    using restricted maximum likelihood (REML), and simultaneous 
-    confidence bands with correct joint coverage are constructed 
-    using posterior simulation. The package also includes functions 
-    for simulation-based benchmarking, visualization of gap 
-    trajectories, and hypothesis testing for global and 
-    grade-specific differences. The modeling framework builds on 
-    penalized spline methods (Eilers and Marx, 1996) and generalized 
-    additive modeling approaches (Wood, 2017), with uncertainty 
-    quantification following Marra and Wood (2012).
+Description:
+    Implements a hierarchical penalized spline framework for estimating
+    achievement gap trajectories in longitudinal educational data.
+    The achievement gap between two groups (e.g., low versus high
+    socioeconomic status) is modeled directly as a smooth function
+    of grade while the baseline trajectory is estimated simultaneously
+    within a mixed-effects model. Smoothing parameters are selected
+    using restricted maximum likelihood (REML), and simultaneous
+    confidence bands with correct joint coverage are constructed
+    using posterior simulation. The package also includes functions
+    for simulation-based benchmarking, visualization of gap
+    trajectories, and hypothesis testing for global and
+    grade-specific differences. The modeling framework builds on
+    penalized spline methods (Eilers and Marx, 1996,
+    <doi:10.1214/ss/1177012843>) and generalized additive modeling
+    approaches (Wood, 2017, <doi:10.1201/9781315370279>), with
+    uncertainty quantification following Marra and Wood (2012,
+    <doi:10.1111/j.1467-9469.2011.00760.x>).
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -35,8 +37,8 @@ Imports:
     MASS (>= 7.3-0),
     ggplot2 (>= 3.4.0)
 Suggests:
-    knitr,
-    rmarkdown,
+    knitr (>= 1.36),
+    rmarkdown (>= 2.11),
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
