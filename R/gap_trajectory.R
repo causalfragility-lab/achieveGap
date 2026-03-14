@@ -39,23 +39,22 @@
 #'   objects, and supporting metadata.
 #'
 #' @examples
-#' \donttest{
-#' sim <- simulate_gap(n_students = 200, n_schools = 20, seed = 1)
+#' sim <- simulate_gap(n_students = 20, n_schools = 5, seed = 1)
 #'
 #' fit <- gap_trajectory(
-#'   data    = sim$data,
-#'   score   = "score",
-#'   grade   = "grade",
-#'   group   = "SES_group",
-#'   school  = "school",
+#'   data = sim$data,
+#'   score = "score",
+#'   grade = "grade",
+#'   group = "SES_group",
+#'   school = "school",
 #'   student = "student",
-#'   n_sim   = 500,
+#'   k = 5,
+#'   n_sim = 200,
 #'   verbose = FALSE
 #' )
 #'
 #' summary(fit)
 #' plot(fit)
-#' }
 #'
 #' @importFrom mgcv gamm s
 #' @importFrom MASS mvrnorm
