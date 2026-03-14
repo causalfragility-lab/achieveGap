@@ -1,7 +1,7 @@
 # achieveGap <img src="man/figures/logo.png" align="right" height="139" alt="" />
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/yourusername/achieveGap/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/yourusername/achieveGap/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/causalfragility-lab/achieveGap/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/causalfragility-lab/achieveGap/actions/workflows/R-CMD-check.yaml)
 [![CRAN status](https://www.r-pkg.org/badges/version/achieveGap)](https://CRAN.R-project.org/package=achieveGap)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 <!-- badges: end -->
@@ -15,7 +15,7 @@ Most existing approaches model group-specific trajectories separately and
 derive the gap as a post hoc difference — ignoring covariance between estimates
 and producing incorrect uncertainty quantification. **achieveGap** parameterizes
 the gap directly as a smooth function of grade, estimated simultaneously with
-the baseline trajectory within a mixed effects model. Simultaneous confidence
+the baseline trajectory within a mixed-effects model. Simultaneous confidence
 bands with correct joint coverage are constructed via posterior simulation.
 
 ## Key Features
@@ -31,18 +31,16 @@ bands with correct joint coverage are constructed via posterior simulation.
 - **Simulation tools**: built-in data generation and benchmark simulation study
 
 ## Installation
-
 ```r
 # CRAN (once published)
 install.packages("achieveGap")
 
 # Development version from GitHub
 # install.packages("devtools")
-devtools::install_github("yourusername/achieveGap")
+devtools::install_github("causalfragility-lab/achieveGap")
 ```
 
 ## Quick Example
-
 ```r
 library(achieveGap)
 
@@ -100,7 +98,7 @@ Both smooth functions are penalized cubic regression splines estimated via
 
 This package accompanies:
 
-> [Your Name] (2024). Modeling Achievement Gap Trajectories Using Hierarchical
+> Hait, S. (2024). Modeling Achievement Gap Trajectories Using Hierarchical
 > Penalized Splines: A Mixed Effects Framework with an R Implementation.
 > *Journal of Educational and Behavioral Statistics*.
 
@@ -108,11 +106,14 @@ This package accompanies:
 
 - Eilers, P. H. C., & Marx, B. D. (1996). Flexible smoothing with B-splines
   and penalties. *Statistical Science*, 11(2), 89–121.
+  <https://doi.org/10.1214/ss/1177012843>
 - Marra, G., & Wood, S. N. (2012). Coverage properties of confidence intervals
   for generalized additive model components. *Scandinavian Journal of
   Statistics*, 39(1), 53–74.
+  <https://doi.org/10.1111/j.1467-9469.2011.00760.x>
 - Wood, S. N. (2017). *Generalized Additive Models: An Introduction with R*
   (2nd ed.). CRC Press.
+  <https://doi.org/10.1201/9781315370279>
 
 ## License
 
