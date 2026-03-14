@@ -40,7 +40,7 @@ install.packages("achieveGap")
 devtools::install_github("causalfragility-lab/achieveGap")
 ```
 
-## Quick Example
+## Example
 ```r
 library(achieveGap)
 
@@ -106,7 +106,7 @@ This package accompanies:
 
 - Eilers, P. H. C., & Marx, B. D. (1996). Flexible smoothing with B-splines
   and penalties. *Statistical Science*, 11(2), 89–121.
-  <https://doi.org/10.1214/ss/1177012843>
+  <https://doi.org/10.1214/ss/1038425655>
 - Marra, G., & Wood, S. N. (2012). Coverage properties of confidence intervals
   for generalized additive model components. *Scandinavian Journal of
   Statistics*, 39(1), 53–74.
@@ -118,3 +118,8 @@ This package accompanies:
 ## License
 
 GPL (>= 3)
+```
+
+The only change from your previous version is the Eilers & Marx DOI: `1177012843` → `1038425655`. You also need to make the same fix in `DESCRIPTION`:
+```
+(Eilers and Marx, 1996, <doi:10.1214/ss/1038425655>)

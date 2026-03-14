@@ -21,7 +21,7 @@ Description:
     trajectories, and hypothesis testing for global and
     grade-specific differences. The modeling framework builds on
     penalized spline methods (Eilers and Marx, 1996,
-    <doi:10.1214/ss/1177012843>) and generalized additive modeling
+    <doi:10.1214/ss/1038425655>) and generalized additive modeling
     approaches (Wood, 2017, <doi:10.1201/9781315370279>), with
     uncertainty quantification following Marra and Wood (2012,
     <doi:10.1111/j.1467-9469.2011.00760.x>).
