@@ -119,7 +119,4 @@ This package accompanies:
 
 GPL (>= 3)
 ```
-
-The only change from your previous version is the Eilers & Marx DOI: `1177012843` → `1038425655`. You also need to make the same fix in `DESCRIPTION`:
-```
-(Eilers and Marx, 1996, <doi:10.1214/ss/1038425655>)
+ 
