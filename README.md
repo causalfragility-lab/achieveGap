@@ -98,7 +98,7 @@ Both smooth functions are penalized cubic regression splines estimated via
 
 This package accompanies:
 
-> Hait, S. (2024). Modeling Achievement Gap Trajectories Using Hierarchical
+> Hait, S. (2026). Modeling Achievement Gap Trajectories Using Hierarchical
 > Penalized Splines: A Mixed Effects Framework with an R Implementation.
 > *Journal of Educational and Behavioral Statistics*.
 
